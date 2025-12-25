@@ -1,0 +1,70 @@
+@import '../variables.less';
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: @spacing-lg @spacing-md;
+  border-bottom: none;
+
+  &__content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__greeting {
+    font-size: 1.1rem;
+    color: @text-secondary;
+    margin-bottom: @spacing-xs;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  &__name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: @primary-color;
+    margin-bottom: @spacing-xs;
+    line-height: 1.1;
+
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: @text-secondary;
+    margin-bottom: @spacing-sm;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: @text-muted;
+    margin-bottom: @spacing-md;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    gap: @spacing-sm;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: @spacing-md;
+  }
+}
